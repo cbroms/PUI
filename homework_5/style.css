@@ -52,6 +52,7 @@ select {
     display: inline-block;
     font-size: 25px;
     margin: 0;
+    margin-left: 40px;
 }
 
 #logo-small {
@@ -71,7 +72,6 @@ select {
     margin: 0 40px;
     font-size: 20px;
     font-family: sans-serif;
-    text-decoration: none;
     color: black;
 }
 
@@ -193,5 +193,9 @@ select {
 
 .product-selection-label {
     margin-bottom: 15px;
+}
+
+.current {
+    text-decoration: underline;
 }
 
