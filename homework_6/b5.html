@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pumpkin Spice Roll - Bun Bun Bakeshop</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">
+                <h1 id="logo-big">Bun Bun</h1>
+                <h2 id="logo-small">Artisan Bakery</h2>
+            </a>
+            <div id="nav-links">
+                <a href="products.html">Shop</a>
+                <a id="cart-link" href="#">Cart (0)</a>
+            </div>
+        </nav>
+
+        <div id="content">
+            <a href="products.html">< All flavors</a>
+
+            <div id="product-column">
+                <h2 class="product-title">Pumpkin Spice</h2>
+                <div class="product-price">$5/ea</div>
+                <img class="product-image" src="images/pumpkin.jpg" alt="" />
+                <p class="product-description">
+                    A fall classic. Baked fresh daily at our Pittsburgh, PA
+                    bakery.
+                </p>
+            </div>
+            <div id="product-selections">
+                <div class="product-selection-label">Glaze</div>
+                <div class="product-select-glaze">
+                    <select>
+                        <option value="0">None</option>
+                        <option value="1">Sugar Milk</option>
+                        <option value="2">Vanilla Milk</option>
+                        <option value="3">Double Chocolate</option>
+                    </select>
+                </div>
+                <div class="product-selection-label">Quantity</div>
+                <div class="product-select-quantity">
+                    <select>
+                        <option value="0">3</option>
+                        <option value="1">6</option>
+                        <option value="2">12</option>
+                        <option value="3">24</option>
+                    </select>
+                </div>
+
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </body>
+</html>
