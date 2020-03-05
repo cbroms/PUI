@@ -158,6 +158,19 @@ const addToCart = bundle => {
     buildCart();
 };
 
+const updatePageDisp = price => {
+    const valSelection = document.getElementById("product-select-quantity");
+    const quant = valSelection.options[valSelection.selectedIndex].value;
+    const glazeSeleciton = document.getElementById("product-select-glaze");
+    const glaze = glazeSeleciton.options[glazeSeleciton.selectedIndex].value;
+
+    document.getElementById(
+        "product-info-display"
+    ).innerText = `${quant} ${glaze} - $${price * parseInt(quant)}`;
+
+    document.getElementById("cart-button").className = "action";
+};
+
 // provide click functionality for the cart and add to cart buttons
 window.addEventListener("DOMContentLoaded", event => {
     // if the cart has already been opened and the page is reloaded, reopen it

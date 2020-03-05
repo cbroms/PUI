@@ -1,5 +1,5 @@
-View live: [https://cbroms.github.io/PUI/homework_5/](https://cbroms.github.io/PUI/homework_5/)
+View live: [https://cbroms.github.io/PUI/homework_6/](https://cbroms.github.io/PUI/homework_6/)
 
-Extra pages:
+The cart functionality is working on the page for the original flavored bun; see it [here](https://cbroms.github.io/PUI/homework_6/b1.html).
 
-All products have their own pages and are clickable from the products browsing page. 
+Prototypes are [here](https://github.com/cbroms/PUI/blob/master/homework_6/HW6A.pdf)

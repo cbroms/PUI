@@ -131,6 +131,11 @@ select {
     overflow-y: scroll;
 }
 
+#product-info-display {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 .cart-product {
     height: 70px;
     width: 260px;

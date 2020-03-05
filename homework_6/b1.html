@@ -37,7 +37,10 @@
             <div id="product-selections">
                 <div class="product-selection-label">Glaze</div>
                 <div class="product-select-glaze">
-                    <select id="product-select-glaze">
+                    <select
+                        id="product-select-glaze"
+                        onchange="updatePageDisp(3)"
+                    >
                         <option value="None">None</option>
                         <option value="Sugar Milk">Sugar Milk</option>
                         <option value="Vanilla Milk">Vanilla Milk</option>
@@ -48,15 +51,21 @@
                 </div>
                 <div class="product-selection-label">Quantity</div>
                 <div class="product-select-quantity">
-                    <select id="product-select-quantity">
+                    <select
+                        id="product-select-quantity"
+                        onchange="updatePageDisp(3)"
+                    >
                         <option value="3">3</option>
                         <option value="6">6</option>
                         <option value="12">12</option>
                         <option value="24">24</option>
                     </select>
                 </div>
-
-                <button onclick="addToCart({flavor: 'Original', price: '3'})">
+                <div id="product-info-display"></div>
+                <button
+                    id="cart-button"
+                    onclick="addToCart({flavor: 'Original', price: '3'})"
+                >
                     Add to cart
                 </button>
             </div>
