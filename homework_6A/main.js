@@ -106,6 +106,12 @@ const buildCart = () => {
         quantity.className = "cart-product-quant";
         quantity.innerText = `Quantity: ${item.quantity}`;
 
+        const price = document.createElement("div");
+        price.className = "cart-product-price";
+        price.innerText = `Price: $${parseInt(item.price) * item.quantity}`;
+
+        console.log(item)
+
         const closeButton = document.createElement("div");
         closeButton.className = "cart-product-remove";
         closeButton.innerText = "X";
@@ -113,9 +119,10 @@ const buildCart = () => {
             removeFromCart(div, item);
         };
 
+        div.appendChild(closeButton);
         div.appendChild(title);
         div.appendChild(quantity);
-        div.appendChild(closeButton);
+        div.appendChild(price);
 
         content.appendChild(div);
     }
