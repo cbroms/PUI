@@ -1,0 +1,53 @@
+:root {
+	--nav-height: 100px;
+	--nav-width: 40px;
+	--nav-border-width: 2px;
+	--nav-border-width-hover: 3px;
+}
+
+.trail-navigation {
+	position: fixed;
+	z-index: 1000;
+	height: var(--nav-height);
+	width: var(--nav-width);
+	border-top: var(--nav-border-width) solid black;
+	border-bottom: var(--nav-border-width) solid black;
+	background-color: white;
+	top: calc(50vh - var(--nav-height) / 2);
+	cursor: pointer;
+}
+
+.trail-navigation:hover {
+	border-top: var(--nav-border-width-hover) solid black;
+	border-bottom: var(--nav-border-width-hover) solid black;
+	height: calc(var(--nav-height) - var(--nav-border-width-hover));
+}
+
+.arrow-icon {
+	--half-height: calc(var(--nav-height) / 2);
+	--half-width: calc(var(--nav-width) / 2);
+	margin-top: calc(var(--half-height) - var(--half-width));
+	width: var(--nav-width);
+}
+
+.right {
+	right: 0;
+	border-left: var(--nav-border-width) solid black;
+}
+
+.right:hover {
+	border-left: var(--nav-border-width-hover) solid black;
+}
+
+.left {
+	left: 0;
+	border-right: var(--nav-border-width) solid black;
+}
+
+.left:hover {
+	border-right: var(--nav-border-width-hover) solid black;
+}
+
+.hidden {
+	display: none;
+}

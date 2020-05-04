@@ -1,0 +1,82 @@
+.step {
+    /* background-color: #f4f4f4;*/
+    width: calc(100vw - 4px);
+    max-width: 600px;
+    max-height: 90vh;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.step-mini {
+    max-height: 250px;
+}
+
+.step-maxi {
+    max-height: 90vh;
+}
+
+.step-int {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.step-header {
+    width: calc(100vw - 44px);
+    max-width: 560px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.image {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .step {
+        margin: 5px 80px;
+        display: inline-block;
+    }
+    .step-wrapper {
+        display: inline-block;
+    }
+}
+
+.step-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.step-link-selected {
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+
+/*Wikipedia stuff*/
+
+a {
+    color: black;
+}
+
+.navbox,
+.desktop-float-right,
+.metadata,
+.vertical-navbox,
+.infobox,
+.hatnote,
+.mw-editsection,
+.sistersitebox,
+.portal {
+    display: none;
+}
+
+.thumbcaption {
+    font-style: italic;
+}
